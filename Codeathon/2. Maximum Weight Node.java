@@ -25,8 +25,11 @@ class HelloWorld {
         int node = 0;
         for(int i=0;i<v;i++)
         {
-            max=Math.max(max,temp[i]);
-            node=i;
+          if(temp[i]>=max)
+          {
+              max=temp[i];
+              node=i;
+          }
         }
         System.out.println(node);
     }
