@@ -26,7 +26,7 @@ class HelloWorld {
             }
             else if(node2==-1||vis[node2])
             {
-                 System.out.print(node2);
+                 System.out.print("-1");
                  break;
             }
             vis[node2]=true;
@@ -37,7 +37,7 @@ class HelloWorld {
     static void findpath(int node1,int node2,ArrayList<Integer> res,int[] edge)
     {
         //reaches the node again or if there is no path then simply return
-        if(res.contains(node2)||node2==-1)
+        if(res.contains(node1)||node1==-1)
         return;
         //if the node1 == node2 then add them and return
         if(node1==node2){
